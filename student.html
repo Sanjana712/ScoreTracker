@@ -1,0 +1,96 @@
+<html>
+<head>
+<style>
+.bg-image { 
+background-image: url('pc.jpg');
+
+height: 100%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  padding: 2px;
+  
+  
+}
+
+label{
+font-size:25;
+color:white;
+}
+.x{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000000;
+    width: 80%;
+}
+legend{
+font-family:sans-serif;
+font-size:24;
+}
+a{
+color:red;
+font-size:20;}
+</style>
+</head>
+<body>
+<div class="bg-image"></div>
+<div class="bg-text">
+<form method="post" action="insert.php">
+<fieldset><legend>Personal Details</legend>
+<label>Full Name:&emsp;</label>
+<input type="text" name="n" required>
+</br><br>
+<label>Roll no:&emsp;</label>
+<input type="text" name="r" required>
+</br><br>
+<label>Email ID:&emsp;</label>
+<input type="email" name="e" required><br><br>
+<label>Branch:&emsp;</label>
+<input type="radio" name="b" value="CSE">CSE
+<input type="radio" name="b" value="ECE">ECE
+<input type="radio" name="b" value="EEE">EEE
+<input type="radio" name="b" value="MECH">MECH
+<input type="radio" name="b" value="IT">IT
+</br><br>
+<label>Passout Year:&emsp;</label>
+<select name="y">
+<option  value="2021">2021</option>
+<option  value="2022">2022</option>
+<option  value="2023">2023</option>
+<option  value="2024">2024</option>
+<option  value="2025">2025</option>
+</select><br><br>
+</fieldset><br>
+<fieldset><legend>User Names</legend>
+<label>Codechef Username:&emsp;</label><br>
+<a href="https://www.codechef.com/" target="_blank">Codechef</a><br><br>
+<input type="text" name="c" required>
+</br><br>
+<label>Codeforce UserName:&emsp;</label><br>
+<a href="https://codeforces.com/" target="_blank">Codeforce</a>
+<br><br>
+<input type="text" name="f" required>
+<br><br>
+<label>Hacker Rank UserName:&emsp;</label><br>
+<a href="https://www.hackerrank.com/" target="_blank">hackerrank</a>
+<br><br>
+<input type="text" name="h" required>
+</fieldset><br><br>
+<input type="submit" value="Submit" style="width: 100px; height:50px; font-size:20px; background-color:mistyrose; " >&emsp;
+<input type="reset" value="Reset" style="width: 100px; height:50px; font-size:20px; background-color:mistyrose;">
+</form></div>
+</body>
+</html>
